@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+  <!-- sidebar -->
+  <section id="slidebar">
+    <div class="nav">
+      <div class="navlinks">
+          <ul class="list-unstyled">
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option0">Now Playing</a></li>
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option1">Poupler</a></li>
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option2">Top Reated</a></li>
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option3">Trending</a></li>
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option4">up coming</a></li>
+          <li class=" p-3"><a href="#" class="text-decoration-none nav-options option5">Contact Us</a></li>
+        </ul>
+        <div class="container navicon">
+       <i class="fab fa-facebook-f st-current"></i>
+       <i class="fab fa-twitter st-current st-hover"></i>
+       <i class="fas fa-globe st-current st-hover"></i><br>
+    </div>
+       <div class="container navfooter"><span>Copyright Â© 2019 All Rights <br> Reserved.</span></div>
+      </div>
+      <div class="icons d-flex flex-column">
+          <img src="imges/WhatsApp Image 2021-10-08 at 8.44.37 PM.jpeg" width="30" height="50">
+          <i class="fa fa-align-justify menuicon"></i>
+          <i class="fas fa-globe st-current st-hover footericon"></i>
+          <i class="fas fa-share-alt footericon"></i>
+</div>
+      </div>
+    </div>
+</section>
+
+
+<!-- Search -->
+<seciton class="pt-3">
+  <div class="container my-5 w-75">
+    <div class="row">
+      <div class="col-md-6">
+        <input
+          id="allMovies"
+          onkeyup="serachbyWord(this.value)"
+          placeholder="get movies by word..."
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-6">
+        <input
+          id="trending"
+          onkeyup="serachTrending(this.value)"
+          placeholder="search..."
+          class="form-control"
+        />
+      </div>
+    </div>
+  </div>
+  <section class="container text-center">
+    <div class="row" id="serachResult"></div>
+  </section>
+</seciton>
+<!-- Movies  -->
+<section>
+  <div class="container px-5 my-5">
+    <div class="row text-center my-5" id="movieData"></div>
+  </div>
+</section>
+
+<!-- contact us  -->
+<div class="container p-5">
+  <h2 class="text-light my-5">ContacUs...</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="name"
+          type="text"
+          class="form-control"
+          placeholder="Enter Your Name"
+        />
+        <div class="alert alert-danger" id="namealert" role="alert">
+          Your Name is not valid
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="email"
+          type="email"
+          class="form-control"
+          placeholder="Enter Email"
+        />
+        <div class="alert alert-danger" id="emailalert" role="alert">
+          enter valid email
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="phone"
+          type="number"
+          class="form-control"
+          placeholder="Enter Phone"
+        />
+        <div class="alert alert-danger" id="phonealert" role="alert">
+          enter valid phone
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="age"
+          type="number"
+          class="form-control"
+          placeholder="Enter Age"
+        />
+        <div class="alert alert-danger" id="agealert" role="alert">
+          enter valid age
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="form-control"
+          placeholder="Enter Password"
+        />
+        <div class="alert alert-danger" id="passwordalert" role="alert">
+          entre valid password *Minimum eight characters, at least one
+          letter and one number:*
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input
+          id="repassword"
+          type="password"
+          name="repassword"
+          class="form-control"
+          placeholder="Enter Repassword"
+        />
+        <div class="alert alert-danger" id="repasswordalert" role="alert">
+          Password not match
+        </div>
+      </div>
+    </div>
+  </div>
+  <button disabled type="submit" id="btn" class="btn btn-outline-danger">
+    Submit
+  </button>
+</div>
+
+
+        <!-- js links -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
